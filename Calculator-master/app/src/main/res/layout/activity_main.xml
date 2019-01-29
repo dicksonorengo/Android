@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/row0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:ellipsize="start"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textViewDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:ellipsize="start"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <LinearLayout
+    android:id="@+id/row2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/ActionButtonStyle"
+            android:onClick="cleartextview"
+            android:text="AC" />
+        <Button
+            android:id="@+id/buttonSquareRoot"
+            style="@style/ActionButtonStyle"
+            android:onClick="rootpressed"
+            android:text="@string/buttonSquareRoot" />
+        <Button
+            android:id="@+id/buttonDivide"
+            style="@style/ActionButtonStyle"
+            android:onClick="pressedoperator"
+            android:text="@string/buttonDivide" />
+        <Button
+        android:id="@+id/buttonInvert"
+        style="@style/ActionButtonStyle"
+        android:onClick="modulopressed"
+        android:text="%" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button7"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button7" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button8" />
+        <Button
+            android:id="@+id/button9"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button9" />
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/ActionButtonStyle"
+            android:onClick="pressedoperator"
+            android:text="@string/buttonMultiply" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button4"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button4" />
+        <Button
+            android:id="@+id/button5"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button5" />
+        <Button
+            android:id="@+id/button6"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button6" />
+        <Button
+            android:id="@+id/buttonSubtract"
+            style="@style/ActionButtonStyle"
+            android:onClick="pressedoperator"
+            android:text="@string/buttonSubtract" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button1"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button1" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button2" />
+        <Button
+            android:id="@+id/button3"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button3" />
+        <Button
+            android:id="@+id/buttonAdd"
+            style="@style/ActionButtonStyle"
+            android:onClick="pressedoperator"
+            android:text="@string/buttonAdd" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button0"
+            style="@style/NumberButtonStyle"
+            android:onClick="pressedNumber"
+            android:text="@string/button0" />
+        <Button
+            android:id="@+id/buttonDecimalPoint"
+            style="@style/ActionButtonStyle"
+            android:onClick="dotpressed"
+            android:text="@string/buttonDecimalPoint" />
+        <Button
+            android:id="@+id/buttonToggleSign"
+            style="@style/ActionButtonStyle"
+            android:onClick="minusfuntion"
+            android:text="@string/buttonToggleSign" />
+        <Button
+            android:id="@+id/buttonEquals"
+            style="@style/ActionButtonStyle"
+            android:onClick="equalpressed"
+            android:text="@string/buttonEquals" />
+    </LinearLayout>
+</LinearLayout>
