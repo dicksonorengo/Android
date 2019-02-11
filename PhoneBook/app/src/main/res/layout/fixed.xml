@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/fixed_contact">
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/grad"
+        android:gravity="center_horizontal">
+        
+        <TextView
+            android:paddingTop="15dp"
+            android:id="@+id/fixed_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Contact Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="90dp"/>
+        <TextView
+            android:id="@+id/fixed_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Phone"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/fixed_call"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:drawableRight="@drawable/ic_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Mobile Call"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/fixed_message"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:drawableEnd="@drawable/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Use messenger"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/fixed_image"
+        android:paddingTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/stivv"
+        android:paddingBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        />
+</RelativeLayout>
