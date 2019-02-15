@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply from: "../config.gradle"
+
+ext {
+    bintrayRepo = 'android'
+    bintrayName = 'infinite-cards'
+
+    publishedGroupId = 'com.bakerj'
+    libraryName = 'InfiniteCards'
+    artifact = 'infinite-cards'
+
+    libraryDescription = 'An infinite card switching UI for Android, support custom animation'
+
+    siteUrl = 'https://github.com/BakerJQ/Android-InfiniteCards'
+    gitUrl = 'https://github.com/BakerJQ/Android-InfiniteCards.git'
+
+    libraryVersion = '1.0.3'
+
+    developerId = 'bakerj'
+    developerName = 'BakerJ'
+    developerEmail = '305317218@qq.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion ANDROID_COMPILE_SDK_VERSION
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION
+        targetSdkVersion ANDROID_TARGET_SDK_VERSION
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:support-annotations:${APPCOMPAT_VERSION}"
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

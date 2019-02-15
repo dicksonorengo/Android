@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MySDU</string>
+    <string name="transition">transit</string>
+</resources>

@@ -21,18 +21,15 @@ public class ViewAdapter extends FragmentPagerAdapter {
 
         return listF.get(position);
     }
-
     @Override
     public int getCount() {
         return listS.size();
     }
-
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         return listS.get(position);
     }
-
     public void AddFragment(Fragment fragment,String string){
         listF.add(fragment);
         listS.add(string);

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mikescamell.sharedelementtransitions">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".simple_activity_to_activity.SimpleActivityA" />
+        <activity android:name=".simple_activity_to_activity.SimpleActivityB" />
+        <activity android:name=".simple_fragment_to_fragment.FragmentToFragmentActivity" />
+        <activity android:name=".picasso_activity_to_activity.PicassoActivityA" />
+        <activity android:name=".picasso_activity_to_activity.PicassoActivityB" />
+        <activity android:name=".picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity" />
+        <activity android:name=".glide_activity_to_activity.GlideActivityA" />
+        <activity android:name=".glide_activity_to_activity.GlideActivityB" />
+        <activity android:name=".glide_fragment_to_fragment.GlideFragmentToFragmentActivity" />
+        <activity android:name=".recycler_view.recycler_view_to_activity.RecyclerViewActivity" />
+        <activity android:name=".recycler_view.recycler_view_to_activity.AnimalDetailActivity" />
+        <activity android:name=".recycler_view.recycler_view_to_fragment.RecyclerViewToFragmentActivity" />
+        <activity android:name=".recycler_view.recycler_view_to_viewpager.RecyclerViewToViewPagerActivity" />
+        <activity
+            android:name=".flash_fix.programmatic_activity.FlashFixProgrammaticActivityA"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".flash_fix.programmatic_activity.FlashFixProgrammaticActivityB"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".flash_fix.xml_activity.FlashFixXmlActivityA"
+            android:theme="@style/AppTheme.NoActionBar.DefaultActivity" />
+        <activity
+            android:name=".flash_fix.xml_activity.FlashFixXmlActivityB"
+            android:theme="@style/AppTheme.NoActionBar.DefaultActivity" />
+    </application>
+
+</manifest>

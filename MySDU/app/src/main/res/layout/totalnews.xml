@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sduu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="On the 11th of October, 2018 SDU met an honourable guest from The Waterloo University, Canada. Manager of Marketing and Recruitment Grant Leach from Renison Uni versity College appreciated our hospitality.
+
+During the meeting, firstly, the guest made a tour in SDU campus. Then Canadian visitors prepared a presentation about language programme for students. After interesting summer language course discoveries, guests were invited for the meeting at the IR office, where all representatives of International Relations and faculty administrations could discuss the teacher’s professional development workshop opportunities." />
+
+</LinearLayout>

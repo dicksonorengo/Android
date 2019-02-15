@@ -50,7 +50,6 @@ public class Call extends Fragment {
         Button btndel = v.findViewById(R.id.btndel);
         Button btnClearAll = v.findViewById(R.id.btnClearAll);
         Button dial = v.findViewById(R.id.ic_phone);
-
         btnAterisk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

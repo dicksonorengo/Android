@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mikescamell.sharedelementtransitions.simple_fragment_to_fragment.FragmentToFragmentActivity">
+
+    <ImageView
+        android:id="@+id/fragment_b_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gorilla"
+        android:contentDescription="@string/gorilla"
+        android:transitionName="@string/simple_fragment_transition"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/fragment_b_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:text="@string/gorilla_blurb" />
+
+</LinearLayout>
