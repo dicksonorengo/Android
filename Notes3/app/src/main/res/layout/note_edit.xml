@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/back_note">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/back_note"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/ic_attach_notes" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_above="@id/button_bar"
+                android:layout_below="@id/pin">
+
+                <EditText
+                    android:id="@+id/edit_note_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:padding="10dp"
+                    android:textColorLink="@android:color/holo_green_dark" />
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/button_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@color/backOfApp"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/no_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="No"
+                    android:textColor="@android:color/holo_green_dark" />
+                <Button
+                    android:id="@+id/yes_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Yes"
+                    android:textColor="@android:color/holo_green_dark" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

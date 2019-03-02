@@ -1,0 +1,23 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- These settings headers are only used on tablets. -->
+    <header
+        android:fragment="com.arashdalir.calendaralarm.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_general" />
+    <header
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_permissions">
+        <intent
+            android:targetClass="com.arashdalir.calendaralarm.PermissionCheckActivity"
+            android:targetPackage="com.arashdalir.calendaralarm"
+            />
+    </header>
+    <header
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_calendars">
+        <intent
+            android:targetClass="com.arashdalir.calendaralarm.CalendarSelectionActivity"
+            android:targetPackage="com.arashdalir.calendaralarm"
+            />
+    </header>
+</preference-headers>

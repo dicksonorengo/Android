@@ -1,0 +1,3 @@
+- changed slow wake-up and sleep reminder units (now stored in seconds)
+- increased alarm expansion touch area
+- alarm names are now (finally) editable

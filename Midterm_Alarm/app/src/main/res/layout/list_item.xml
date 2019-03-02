@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/meLinear"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="08:00"
+            android:textSize="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_marginLeft="170dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight = "true"
+            android:gravity="end"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="45dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_action_name"
+            app:srcCompat="@drawable/ic_action_name" />
+    </LinearLayout>
+    <TextView
+        android:text="Good morning"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="27dp"
+        android:layout_below="@id/meLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
