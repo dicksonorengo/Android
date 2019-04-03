@@ -33,7 +33,6 @@ public class DataAdapter extends ArrayAdapter<Data> {
         time.setText(contents.get(position).getTime());
         final ImageView del = custom_view.findViewById(R.id.delete_image);
         description.setText(contents.get(position).getDescription());
-
         del.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,11 +62,8 @@ public class DataAdapter extends ArrayAdapter<Data> {
         });
         return custom_view;
     }
-
     @Override
     public int getCount() {
         return contents.size();
     }
-
-
 }

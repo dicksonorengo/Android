@@ -28,12 +28,8 @@
             android:layout_width="45dp"
             android:layout_marginTop="25dp"
             android:layout_height="45dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:paddingRight="5dp"
             android:src="@drawable/ic_action_name"
-            app:srcCompat="@drawable/ic_action_name" />
+            />
     </LinearLayout>
     <TextView
         android:text="Good morning"

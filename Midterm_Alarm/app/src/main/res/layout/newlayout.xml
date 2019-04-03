@@ -12,9 +12,7 @@
         <TimePicker
             android:id="@+id/timePicker"
             android:layout_width="wrap_content"
-            android:background="@color/colorPrimaryDark"
             android:layout_height="wrap_content" />
-
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
@@ -23,8 +21,6 @@
             android:inputType="textPersonName"
             android:hint="Description" />
     </LinearLayout>
-
-
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"

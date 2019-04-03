@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         contents = databaseHelper.getContents();
         adapter = new DataAdapter(this,contents);
         lv.setAdapter(adapter);
-
-
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

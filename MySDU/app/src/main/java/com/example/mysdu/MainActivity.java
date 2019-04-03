@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public classMainActivity extends AppCompatActivity {
     Animation atg, atgtwo, atgthree,atgfour;
     ImageView imageView3;
     Button btnguide;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        atg = AnimationUtils.loadAnimation(this, R.anim.atg);
+        atg = AnimationUtils.loadAnimation(this, R.anim.);
         atgtwo = AnimationUtils.loadAnimation(this, R.anim.atgtwo);
         atgthree = AnimationUtils.loadAnimation(this, R.anim.atgthree);
         atgfour = AnimationUtils.loadAnimation(this, R.anim.atgtwo);

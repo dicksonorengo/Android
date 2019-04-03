@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GoogleMap</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+</resources>
