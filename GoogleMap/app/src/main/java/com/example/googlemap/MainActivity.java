@@ -142,27 +142,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
-        /*map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
-            @Override
-            public void onMapClick(LatLng latLng) {
-                Geocoder geocoder;
-                List<Address> addresses;
-                geocoder = new Geocoder(MainActivity.this, Locale.getDefault());
-                try {
-                    addresses = geocoder.getFromLocation(latLng.latitude,latLng.longitude,1);
-                    System.out.println("!!!!!!!!!!!!!!!!!!!!!!!  " + addresses.toString());
-                    String address = addresses.get(0).getAddressLine(0);
-                    String city = addresses.get(0).getLocality();
-                    String state = addresses.get(0).getAdminArea();
-                    String country = addresses.get(0).getCountryName();
-                    String postalcode = addresses.get(0).getPostalCode();
-                    String knownname = addresses.get(0).getFeatureName();
-                    Log.d("city",city);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });*/
+
     }
     public void radioclicked(View v){
         switch (v.getId()){
@@ -220,6 +200,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         adapter = new PlaceAdapter(this,contents);
         lv.setAdapter(adapter);
     }
+
     public  void longclick(){
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override

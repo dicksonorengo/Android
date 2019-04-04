@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:background="@drawable/grad"
         android:gravity="center_horizontal">
-        
+
         <TextView
             android:paddingTop="15dp"
             android:id="@+id/fixed_name"
