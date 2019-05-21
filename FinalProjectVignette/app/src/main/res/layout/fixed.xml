@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/fixed_contact"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/fixed_image"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/school"
+        />
+    <LinearLayout
+        android:layout_below="@+id/fixed_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <EditText
+            android:id="@+id/classcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Access Code"
+            android:padding="10dp"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:background="@null"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Schools"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:background="@null"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/no_button"
+                android:layout_margin="5dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backdround_login"
+                android:text="No"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/yes_button"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/no"
+                android:background="@drawable/backdround_login"
+                android:text="OK"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

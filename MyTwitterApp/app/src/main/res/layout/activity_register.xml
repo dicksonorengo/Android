@@ -22,34 +22,7 @@
         android:layout_centerHorizontal="true"
         />
 
-    <ImageView
-        android:id="@+id/circle1"
-        android:layout_width="134dp"
-        android:layout_height="134dp"
-        android:layout_below="@+id/bgHeader"
-        android:layout_marginLeft="-25dp"
-        android:layout_marginTop="-5dp"
-        android:src="@drawable/circletransparant" />
 
-    <ImageView
-        android:id="@+id/circle3"
-        android:layout_width="182dp"
-        android:layout_height="182dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="-80dp"
-        android:layout_marginBottom="-30dp"
-        android:src="@drawable/circle" />
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="@dimen/dimen_20"
-        android:layout_marginRight="@dimen/dimen_20"
-        android:layout_below="@+id/bgHeader"
-        >
         <RelativeLayout
             android:id="@+id/rlayout"
             android:layout_width="match_parent"
@@ -75,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:text="Email"
-                        android:textColor="@color/colorPurple"
+                        android:textColor="#cc46"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -92,7 +65,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:text="Username"
-                        android:textColor="@color/colorPurple"
+                        android:textColor="#cc46"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -109,7 +82,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:text="Password"
-                        android:textColor="@color/colorPurple"
+                        android:textColor="#cc46"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -127,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:text="Confirm Password"
-                        android:textColor="@color/colorPurple"
+                        android:textColor="#cc46"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -159,14 +132,13 @@
                     android:id="@+id/regBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_ui"
+                    android:background="#cc46"
                     android:text="Sign up"
                     android:layout_marginTop="50dp"
                     android:textAllCaps="false"
                     android:textColor="@color/colorWhite" />
             </RelativeLayout>
         </RelativeLayout>
-    </ScrollView>
 
     <ProgressBar
         android:id="@+id/reg_progress"

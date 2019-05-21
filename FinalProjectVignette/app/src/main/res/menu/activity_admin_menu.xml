@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_addClass"
+        android:icon="@drawable/add_class"
+        android:orderInCategory="100"
+        android:title="Add new Class"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_newClass"
+        android:icon="@drawable/new_class"
+        android:orderInCategory="100"
+        android:title="Add new Class"
+        app:showAsAction="always" />
+
+</menu>
+
+
+
+
+
+

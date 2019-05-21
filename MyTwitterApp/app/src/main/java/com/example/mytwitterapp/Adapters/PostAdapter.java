@@ -41,8 +41,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
     }
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.imgPost.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_transition));
-        holder.container.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_scale));
         holder.tvTitle.setText(mData.get(position).getTitle());
 
         Calendar cal = Calendar.getInstance();

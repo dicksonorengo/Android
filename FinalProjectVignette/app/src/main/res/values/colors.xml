@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="tomatoColorDark">#c94646</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="colorPurple">#983CFF</color>
+    <color name="colorPurpleT">#64983cff</color>
+    <color name="colorBlue">#2FB4FF</color>
+    <color name="colorBlueT">#642fb4ff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="accent_color">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="black_grey">#F7242323</color>
+
+
+
+    <color name="cl_name_text_color">#000000</color>
+    <color name="cl_address_text_color">#828282</color>
+    <color name="cl_email_text_color">#4F4F4F</color>
+    <color name="cl_number_text_color">#4F4F4F</color>
+    <color name="cl_delete_drawable_color">#EB5757</color>
+    <color name="cl_icon_drawable_enable_color">#219653</color>
+    <color name="cl_icon_drawable_disable_color">#828282</color>
+    <color name="dividerLineColor">#E0E0E0</color>
+
+    <color name="background_pink">#df546e</color>
+</resources>

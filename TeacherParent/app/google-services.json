@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "105661953731",
+    "firebase_url": "https://teacher-pareent.firebaseio.com",
+    "project_id": "teacher-pareent",
+    "storage_bucket": "teacher-pareent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105661953731:android:67917a1c0b462415",
+        "android_client_info": {
+          "package_name": "com.example.teacher_parent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV6oZnW3pkAADXw5nBgJQ0rzVNJNuhrj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105661953731-561k7mgsl0abqkn2ghc4h9f7mc6pa0p9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

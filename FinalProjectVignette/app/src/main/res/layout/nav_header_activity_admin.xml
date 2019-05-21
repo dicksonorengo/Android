@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/background_pink"
+    android:paddingBottom="32dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/admin_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/jj"
+        app:civ_border_color="#EEEEEE"
+        android:layout_marginTop="20dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:civ_shadow="true"
+        android:scaleType="centerCrop"
+        app:civ_shadow_color="@color/white"
+        app:civ_shadow_radius="5"
+        app:civ_border_width="0dp"
+        />
+    <TextView
+        android:id="@+id/Nav_admin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Studio"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="cursive"
+        style="bold"/>
+    <TextView
+        android:id="@+id/Nav_admin_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="android.studio@android.com" />
+
+</LinearLayout>

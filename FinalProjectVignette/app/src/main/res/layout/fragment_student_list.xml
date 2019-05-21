@@ -1,0 +1,37 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:theme="@style/AppTheme.NoActionBar"
+    >
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/class_child_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+</android.support.v7.widget.RecyclerView>
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/Button_AddChildToClass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    app:backgroundTint="@color/background_pink"
+    android:layout_margin="@dimen/fab_margin"
+    android:src="@drawable/ic_person_add_black_24dp" />
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/Button_existchild"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_marginBottom="80dp"
+    android:layout_marginRight="16dp"
+    app:backgroundTint="@color/background_pink"
+    android:src="@drawable/add_exist"
+    app:fabSize="auto"/>
+</android.support.design.widget.CoordinatorLayout>
+

@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#455399</color>
-    <color name="colorPrimaryDark">#455399</color>
-    <color name="colorAccent">#00c6ae</color>
-    <color name="msg_no_notes">#999</color>
-    <color name="hint_enter_note">#89c3c3c3</color>
-    <color name="timestamp">#858585</color>
-    <color name="note_list_text">#232323</color>
-    <color name="top_back">#FFA500</color>
-    <color name="black">#000</color>
-    <color name="red">#FF0000</color>
-    <color name="yellow">#FFFF00</color>
-    <color name="blue">#0000FF</color>
-    <color name="green">#00E100</color>
-    <color name="brown">#FFA500</color>
+    <!--<color name="colorPrimary">#EA8E1E</color>
+    <color name="colorPrimaryDark">#ea8e1e</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backOfApp">#fffde5</color>
+    <color name="notesBack1">#FFEE00</color>
+    <color name="notesBack2">#dd6649</color>
+    <color name="notesBack3">#7f93e0</color>
+    <color name="notesBack4">#54bc5d</color>
+    <color name="secondaryBack">#EEEBD9</color>
+    <color name="textColor">#373D3F</color>
+    <color name="back_note">#fff989</color>-->
+    <color name="colorPrimary">#ea7704</color>
+    <color name="colorPrimaryDark">#ea7704</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backOfApp">#fffde5</color>
+    <color name="notesBack1">#f4d041</color>
+    <color name="notesBack2">#fc3737</color>
+    <color name="notesBack3">#37cafc</color>
+    <color name="notesBack4">#73fc6f</color>
+    <color name="secondaryBack">#EEEBD9</color>
+    <color name="textColor">#373D3F</color>
+    <color name="back_note">#ffffd8</color>
+
 </resources>

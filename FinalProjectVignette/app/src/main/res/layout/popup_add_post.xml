@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="620dp"
+    android:background="@drawable/background"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:layout_marginTop="20dp">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/jj"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/popup_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popup_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/popup_user_image"
+        app:civ_shadow_color="@color/white"
+        app:civ_shadow_radius="5"
+        />
+
+    <EditText
+        android:id="@+id/popup_title"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        app:layout_constraintEnd_toStartOf="@+id/popup_user_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@null"
+        android:padding="10dp"/>
+    <View
+        app:layout_constraintBottom_toBottomOf="@+id/popup_title"
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="48dp"
+        android:background="#f9d7db"/>
+
+
+    <EditText
+        android:hint="Description"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:id="@+id/popup_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        android:background="@null"
+        android:padding="10dp"/>
+    <View
+        android:id="@+id/view2"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_description"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f9d7db"/>
+
+
+
+    <ImageView
+            android:id="@+id/popup_img"
+            android:layout_marginTop="20dp"
+            android:background="#2d2d2d"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            android:src="@drawable/rr"
+            />
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_img"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/popup_add"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="12dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/videoview"
+        app:layout_constraintStart_toStartOf="@id/videoview"
+        app:layout_constraintTop_toBottomOf="@+id/videoview"
+        app:srcCompat="@drawable/ic_send_white_24dp" />
+
+    <ProgressBar
+        android:padding="4dp"
+        android:id="@+id/popup_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/popup_add"
+        app:layout_constraintStart_toStartOf="@+id/popup_add"
+        app:layout_constraintTop_toTopOf="@+id/popup_add" />
+</android.support.constraint.ConstraintLayout>
