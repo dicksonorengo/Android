@@ -101,6 +101,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/post_detail_date_name" />
 
+         
         <ImageView
             android:id="@+id/post_detail_user_img"
             android:layout_width="20dp"
